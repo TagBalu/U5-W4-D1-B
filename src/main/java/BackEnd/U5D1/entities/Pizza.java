@@ -7,8 +7,8 @@ public class Pizza extends Articolo{
       private  String toppingsDes;
 
 
-    public Pizza (String nome, double prezzo, double prezzoBase, String infoNutrizionali){
-        super(nome,prezzoBase,infoNutrizionali);
+    public Pizza (String nome, double prezzo, String infoNutrizionali, String toppingsDes){
+        super(nome,prezzo,infoNutrizionali);
         this.toppingsDes = toppingsDes;
     }
 

@@ -1,7 +1,7 @@
 package BackEnd.U5D1.entities;
 
 public class Bevanda extends  Articolo {
-    private Bevanda(String nome , double prezzo , String infoNutrizionali){
+    public Bevanda(String nome, double prezzo, String infoNutrizionali){
         super ( nome,prezzo,infoNutrizionali);
     }
 
