@@ -4,18 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Pizza extends Articolo{
-    private List<Topping> toppings;
-    private  boolean isXL;
+      private  String toppingsDes;
 
 
-    public Pizza (String nome, double prezzo, double prezzoBase, String infoNutrizionali, boolean isXL){
+    public Pizza (String nome, double prezzo, double prezzoBase, String infoNutrizionali){
         super(nome,prezzoBase,infoNutrizionali);
-        this.toppings= new ArrayList<>();
-        this.isXL=isXL;
+        this.toppingsDes = toppingsDes;
     }
-    public void aggiungiTopping ( Topping topping, int quantita){
-        for( int i=0; i<quantita; i++){
-            topping.add(topping);
-        }
+
+    @Override
+    public  String getDescrizione(){
+        return nome+(toppingsDes==null || toppingsDes.isEmpty() ? "" : " con " + toppingsDes);
     }
 }
